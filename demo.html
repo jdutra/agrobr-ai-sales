@@ -3,517 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroBR - IA que Aumenta sua Receita em 20%+ | Simulação Inteligente de Vendas Agrícolas</title>
-    <meta name="description" content="Inteligência Artificial que analisa 1000+ cenários e recomenda o momento exato para vender sua safra. Aumente sua receita em 20%+ via WhatsApp.">
+    <title>Demo AgroBR - IA de Simulação de Vendas | Teste Grátis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
-        .gradient-text { background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
-        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
-        .float-animation { animation: float 6s ease-in-out infinite; }
-        @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); } 50% { box-shadow: 0 0 40px rgba(16, 185, 129, 0.8); } }
-        .pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+        @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in { animation: fade-in 0.3s ease-out; }
+        @keyframes typing { from { width: 0; } to { width: 100%; } }
+        .typing-effect { overflow: hidden; white-space: nowrap; animation: typing 2s steps(40); }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .pulse-animation { animation: pulse 2s ease-in-out infinite; }
+        .gradient-border { background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #10b981, #3b82f6) border-box; border: 3px solid transparent; }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm fixed top-0 w-full z-50">
-        <nav class="max-w-7xl mx-auto px-6 py-4">
+        <div class="max-w-7xl mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                        🤖
-                    </div>
-                    <span class="text-2xl font-bold text-gray-900">AgroBR</span>
-                </div>
-                <div class="hidden md:flex items-center gap-6">
-                    <a href="#como-funciona" class="text-gray-600 hover:text-green-600 font-medium">Como Funciona</a>
-                    <a href="#ia" class="text-gray-600 hover:text-green-600 font-medium">Tecnologia IA</a>
-                    <a href="#resultados" class="text-gray-600 hover:text-green-600 font-medium">Resultados</a>
-                    <a href="#precos" class="text-gray-600 hover:text-green-600 font-medium">Preços</a>
-                    <a href="demo.html" class="bg-gradient-to-r from-green-600 to-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-all shadow-lg">
-                        🚀 Testar Grátis
-                    </a>
-                </div>
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center text-xl">🤖</div>
+                    <span class="text-xl font-bold text-gray-900">AgroBR Demo</span>
+                </a>
+                <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium">← Voltar ao site</a>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 pulse-glow">
-                        🔥 300+ agricultores economizaram R$ 22k+ cada
+    <!-- Main Demo -->
+    <div class="pt-20 min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+        <div class="max-w-6xl mx-auto px-6 py-8">
+            
+            <!-- Alert Banner -->
+            <div class="bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-xl p-6 mb-8 text-center shadow-xl">
+                <p class="text-2xl font-bold mb-2">🤖 Demo Interativa - IA de Simulação de Vendas</p>
+                <p class="text-green-100">Veja como nossa IA analisa sua safra e recomenda a melhor estratégia de venda</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                
+                <!-- Left: Chat Interface -->
+                <div class="bg-white rounded-2xl shadow-2xl gradient-border">
+                    <div class="bg-gradient-to-r from-green-600 to-blue-600 text-white p-6 rounded-t-2xl">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                <span class="text-3xl">🤖</span>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold">AgroBR IA</h2>
+                                <p class="text-sm text-green-100 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-green-300 rounded-full pulse-animation"></span>
+                                    Online • Analisando mercados
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                        IA que Aumenta sua Receita Rural em <span class="gradient-text">20%+</span>
-                    </h1>
-                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-                        Nossa Inteligência Artificial analisa <strong>preços, clima e demanda global</strong> para recomendar o <strong>momento exato</strong> de vender sua safra. Tudo via WhatsApp, sem complicação.
-                    </p>
+
+                    <div class="h-[600px] overflow-y-auto p-6 space-y-4" id="chatContainer">
+                        <!-- Messages will appear here -->
+                        <div class="flex justify-start animate-fade-in">
+                            <div class="max-w-[80%]">
+                                <div class="bg-gray-100 rounded-2xl rounded-bl-none p-4 shadow">
+                                    <p class="text-gray-800 mb-2">👋 Olá! Sou a IA do AgroBR.</p>
+                                    <p class="text-gray-800 mb-2">Vou te mostrar como posso <strong>maximizar a receita da sua safra</strong> através de análise inteligente de mercado.</p>
+                                    <p class="text-gray-800">Para começar, me conte sobre sua produção:</p>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">08:30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t p-4 bg-gray-50 rounded-b-2xl">
+                        <div id="quickOptions" class="grid grid-cols-2 gap-2 mb-4">
+                            <button onclick="startDemo('soja')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition-all shadow">
+                                🌾 Tenho Soja
+                            </button>
+                            <button onclick="startDemo('milho')" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-3 rounded-lg font-semibold transition-all shadow">
+                                🌽 Tenho Milho
+                            </button>
+                        </div>
+                        <div class="text-center text-sm text-gray-500">
+                            Escolha uma opção para começar a simulação
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Real-time Analysis -->
+                <div class="space-y-6">
                     
-                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <a href="demo.html" class="bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-green-700 hover:to-blue-700 transition-all shadow-xl text-center">
-                            🤖 Testar IA Grátis
-                        </a>
-                        <a href="#como-funciona" class="bg-white text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 transition-all shadow-lg border-2 border-gray-200 text-center">
-                            📊 Ver Como Funciona
-                        </a>
-                    </div>
-
-                    <div class="flex items-center gap-8 text-sm text-gray-600">
-                        <div class="flex items-center gap-2">
-                            <span class="text-green-600 text-xl">✓</span>
-                            <span>Grátis para testar</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-green-600 text-xl">✓</span>
-                            <span>100% via WhatsApp</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-green-600 text-xl">✓</span>
-                            <span>Sem instalar nada</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="float-animation">
-                        <div class="bg-white rounded-3xl shadow-2xl p-8 border-4 border-green-500">
-                            <div class="flex items-center gap-3 mb-6">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white text-2xl">
-                                    🤖
-                                </div>
-                                <div>
-                                    <p class="font-bold text-gray-900">IA AgroBR</p>
-                                    <p class="text-sm text-gray-600">Analisando sua safra...</p>
+                    <!-- Market Data Widget -->
+                    <div class="bg-white rounded-2xl p-6 shadow-xl">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                            <span>📊</span>
+                            <span>Dados de Mercado em Tempo Real</span>
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Soja (CEPEA Brasília)</span>
+                                <div class="text-right">
+                                    <p class="text-xl font-bold text-green-600">R$ 142,50/sc</p>
+                                    <p class="text-xs text-green-600">↗ +2,3%</p>
                                 </div>
                             </div>
-                            
-                            <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 mb-4">
-                                <p class="text-sm text-gray-600 mb-3">📊 Simulação de Venda - Soja 8.700 sc</p>
-                                <div class="space-y-2 text-sm">
-                                    <div class="flex justify-between">
-                                        <span class="text-gray-700">Vender tudo hoje:</span>
-                                        <span class="font-bold text-gray-900">R$ 1.239.750</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span class="text-green-700 font-semibold">Estratégia IA ótima:</span>
-                                        <span class="font-bold text-green-600">R$ 1.301.085</span>
-                                    </div>
-                                </div>
-                                <div class="mt-4 pt-4 border-t border-gray-200">
-                                    <div class="flex justify-between items-center">
-                                        <span class="text-gray-700 font-semibold">Ganho com IA:</span>
-                                        <span class="text-2xl font-bold text-green-600">+R$ 61.335</span>
-                                    </div>
-                                    <p class="text-xs text-gray-600 mt-1 text-right">+5% de retorno! 🚀</p>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Chicago (CBOT)</span>
+                                <div class="text-right">
+                                    <p class="text-xl font-bold text-blue-600">US$ 10,85/bu</p>
+                                    <p class="text-xs text-blue-600">↗ +1,8%</p>
                                 </div>
                             </div>
-
-                            <div class="bg-green-600 text-white rounded-lg p-4 text-center">
-                                <p class="font-bold text-lg">✨ Recomendação IA Aplicada</p>
-                                <p class="text-sm text-green-100 mt-1">30% hoje • 40% nov • 30% fev</p>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="text-gray-700">Dólar</span>
+                                <div class="text-right">
+                                    <p class="text-xl font-bold text-purple-600">R$ 5,23</p>
+                                    <p class="text-xs text-purple-600">↗ +0,8%</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Stats Floating Cards -->
-                    <div class="absolute -top-6 -left-6 bg-white rounded-xl shadow-xl p-4 border-2 border-blue-200">
-                        <p class="text-3xl font-bold text-blue-600">84%</p>
-                        <p class="text-xs text-gray-600">Acurácia IA</p>
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-4 border-2 border-green-200">
-                        <p class="text-3xl font-bold text-green-600">3 seg</p>
-                        <p class="text-xs text-gray-600">Análise</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Problema Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">O Problema de R$ 47 Bilhões</h2>
-                <p class="text-xl text-gray-600">Agricultores brasileiros perdem bilhões vendendo no momento errado</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-red-50 rounded-2xl p-8 border-l-4 border-red-500">
-                    <div class="text-5xl font-bold text-red-600 mb-4">68%</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Vendem na Pior Hora</h3>
-                    <p class="text-gray-700">Desespero de caixa força venda na colheita, quando preço está mais baixo</p>
-                    <p class="mt-4 text-red-600 font-bold">→ Perda média: R$ 28k/safra</p>
-                </div>
-
-                <div class="bg-orange-50 rounded-2xl p-8 border-l-4 border-orange-500">
-                    <div class="text-5xl font-bold text-orange-600 mb-4">R$ 50k+</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Análise Inacessível</h3>
-                    <p class="text-gray-700">Consultoria profissional custa R$ 50-200k/ano. Apenas 5% têm acesso</p>
-                    <p class="mt-4 text-orange-600 font-bold">→ Pequenos sem informação</p>
-                </div>
-
-                <div class="bg-yellow-50 rounded-2xl p-8 border-l-4 border-yellow-500">
-                    <div class="text-5xl font-bold text-yellow-600 mb-4">82%</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Não Entendem Mercado</h3>
-                    <p class="text-gray-700">Não sabem interpretar CBOT, B3, fundamentos de oferta/demanda</p>
-                    <p class="mt-4 text-yellow-600 font-bold">→ Decisões no "achismo"</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Como Funciona -->
-    <section id="como-funciona" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Como a IA Funciona</h2>
-                <p class="text-xl text-gray-600">5 passos para maximizar sua receita</p>
-            </div>
-
-            <div class="grid md:grid-cols-5 gap-6">
-                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
-                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto">1</div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Você Pergunta</h3>
-                    <p class="text-sm text-gray-600 text-center">"Devo vender minha soja agora ou esperar?"</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
-                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto">2</div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">IA Coleta Dados</h3>
-                    <p class="text-sm text-gray-600 text-center">Preços, clima global, demanda China, seu custo</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
-                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto">3</div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">IA Simula</h3>
-                    <p class="text-sm text-gray-600 text-center">1000+ cenários de venda. Qual dá mais lucro?</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
-                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto">4</div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Você Recebe</h3>
-                    <p class="text-sm text-gray-600 text-center">Recomendação clara: quanto, quando, por quê</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
-                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto">5</div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Executa Fácil</h3>
-                    <p class="text-sm text-gray-600 text-center">Conectamos com compradores. 1 clique!</p>
-                </div>
-            </div>
-
-            <div class="mt-16 bg-white rounded-2xl p-12 shadow-2xl">
-                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Exemplo Real: João Silva</h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-red-50 rounded-xl p-6 border-l-4 border-red-500">
-                        <p class="text-lg font-bold text-red-700 mb-4">❌ SEM AgroBR</p>
-                        <p class="text-gray-700 mb-4">João vende toda a safra na colheita por desespero de caixa</p>
-                        <div class="space-y-2 text-sm">
-                            <p className="flex justify-between"><span>8.700 sacas × R$ 130/sc</span><span className="font-bold">R$ 1.131.000</span></p>
+                    <!-- IA Analysis Status -->
+                    <div id="analysisWidget" class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-6 shadow-xl text-white" style="display: none;">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                            <span class="animate-spin">⚙️</span>
+                            <span>IA Analisando...</span>
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3" id="step1">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                                    <span class="pulse-animation">⏳</span>
+                                </div>
+                                <span>Coletando dados de preços...</span>
+                            </div>
+                            <div class="flex items-center gap-3" id="step2">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                                    <span class="pulse-animation">⏳</span>
+                                </div>
+                                <span>Analisando clima global...</span>
+                            </div>
+                            <div class="flex items-center gap-3" id="step3">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                                    <span class="pulse-animation">⏳</span>
+                                </div>
+                                <span>Simulando 1000+ cenários...</span>
+                            </div>
+                            <div class="flex items-center gap-3" id="step4">
+                                <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                                    <span class="pulse-animation">⏳</span>
+                                </div>
+                                <span>Calculando estratégia ótima...</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500">
-                        <p class="text-lg font-bold text-green-700 mb-4">✅ COM AgroBR</p>
-                        <p class="text-gray-700 mb-4">IA recomenda venda gradual baseada em previsões</p>
-                        <div class="space-y-2 text-sm">
-                            <p>30% hoje: R$ 371.925</p>
-                            <p>40% nov: R$ 542.880</p>
-                            <p>30% fev: R$ 386.280</p>
-                            <p className="font-bold text-lg text-green-600 pt-2 border-t">Total: R$ 1.301.085</p>
+
+                    <!-- Results Preview -->
+                    <div id="resultsPreview" class="bg-white rounded-2xl p-6 shadow-xl" style="display: none;">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">🎯 Prévia dos Resultados</h3>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                                <p class="text-sm text-gray-600 mb-1">Se vender tudo hoje:</p>
+                                <p class="text-2xl font-bold text-red-600" id="scenarioBasic">R$ 0</p>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                                <p class="text-sm text-gray-600 mb-1">Com estratégia IA:</p>
+                                <p class="text-2xl font-bold text-green-600" id="scenarioAI">R$ 0</p>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-4 text-center">
+                                <p class="text-sm text-gray-600 mb-1">Ganho potencial:</p>
+                                <p class="text-3xl font-bold text-blue-600" id="scenarioGain">R$ 0</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-8 text-center">
-                    <p class="text-4xl font-bold text-green-600 mb-2">Ganho: +R$ 170.085</p>
-                    <p class="text-gray-600">15% a mais de receita! 🚀</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Tecnologia IA -->
-    <section id="ia" class="py-20 bg-gradient-to-br from-blue-900 to-purple-900 text-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Tecnologia de Ponta</h2>
-                <p class="text-xl text-blue-200">Stack de IA usado por fundos de investimento</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-                    <div class="text-5xl mb-4">🧠</div>
-                    <h3 class="text-2xl font-bold mb-3">LSTM Neural Networks</h3>
-                    <p class="text-blue-100">Prevê preços com 84% de acurácia analisando 15 anos de histórico</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-                    <div class="text-5xl mb-4">📊</div>
-                    <h3 class="text-2xl font-bold mb-3">XGBoost Ensemble</h3>
-                    <p class="text-blue-100">Processa 50+ variáveis: clima, demanda, câmbio, estoques globais</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur rounded-2xl p-8">
-                    <div class="text-5xl mb-4">🎲</div>
-                    <h3 class="text-2xl font-bold mb-3">Monte Carlo</h3>
-                    <p class="text-blue-100">Simula 10.000 cenários futuros considerando incertezas</p>
-                </div>
-            </div>
-
-            <div class="bg-white/10 backdrop-blur rounded-2xl p-12 text-center">
-                <p class="text-3xl font-bold mb-6">Por Que Nossa IA é Única?</p>
-                <div class="grid md:grid-cols-3 gap-8 text-left">
-                    <div>
-                        <p class="text-yellow-400 font-bold mb-2">✨ Dataset Brasileiro</p>
-                        <p class="text-blue-100">15 anos de dados locais (parceria EMBRAPA + ESALQ)</p>
-                    </div>
-                    <div>
-                        <p class="text-yellow-400 font-bold mb-2">✨ Personalização</p>
-                        <p class="text-blue-100">Considera SUA situação: custos, dívidas, perfil de risco</p>
-                    </div>
-                    <div>
-                        <p class="text-yellow-400 font-bold mb-2">✨ Simplicidade</p>
-                        <p class="text-blue-100">Complexidade escondida. Resposta clara no WhatsApp</p>
+                    <!-- CTA -->
+                    <div class="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-6 shadow-xl text-white text-center">
+                        <p class="text-xl font-bold mb-3">💡 Gostou do que viu?</p>
+                        <p class="text-green-100 mb-4">Comece a usar AGORA no seu WhatsApp</p>
+                        <button onclick="window.open('https://wa.me/5561999999999', '_blank')" class="bg-white text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition-all w-full">
+                            📱 Conectar WhatsApp
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Resultados -->
-    <section id="resultados" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Resultados Reais</h2>
-                <p class="text-xl text-gray-600">300 agricultores já estão economizando</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="text-center">
-                    <div class="text-6xl font-bold text-green-600 mb-2">+20%</div>
-                    <p class="text-xl font-semibold text-gray-900 mb-2">Aumento Médio de Receita</p>
-                    <p class="text-gray-600">vs venda tradicional</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-6xl font-bold text-blue-600 mb-2">R$ 22k</div>
-                    <p class="text-xl font-semibold text-gray-900 mb-2">Economia Média</p>
-                    <p class="text-gray-600">por agricultor/safra</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-6xl font-bold text-purple-600 mb-2">300+</div>
-                    <p class="text-xl font-semibold text-gray-900 mb-2">Agricultores Ativos</p>
-                    <p class="text-gray-600">no piloto</p>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-green-50 rounded-2xl p-8 border-l-4 border-green-500">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">JS</div>
-                        <div>
-                            <p class="font-bold text-gray-900 text-lg">José Silva</p>
-                            <p class="text-sm text-gray-600">85 ha soja, Planaltina-DF</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic mb-4">"Economizei R$ 22.000 na última safra identificando o melhor momento de venda. A IA do AgroBR pagou por si mesma 45 vezes!"</p>
-                    <div class="flex gap-1">
-                        <span class="text-yellow-500 text-xl">★★★★★</span>
-                    </div>
-                </div>
-
-                <div class="bg-blue-50 rounded-2xl p-8 border-l-4 border-blue-500">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">MS</div>
-                        <div>
-                            <p class="font-bold text-gray-900 text-lg">Maria Santos</p>
-                            <p class="text-sm text-gray-600">Diretora Cooperativa Vale do Cerrado</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic mb-4">"Como cooperativa, agora oferecemos análise de mercado de R$ 200k/ano por R$ 49/mês para nossos cooperados. Game changer total!"</p>
-                    <div class="flex gap-1">
-                        <span class="text-yellow-500 text-xl">★★★★★</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="precos" class="py-20 bg-gradient-to-br from-gray-50 to-green-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Planos & Preços</h2>
-                <p class="text-xl text-gray-600">Análise de R$ 200k/ano por R$ 49/mês</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Gratuito</h3>
-                    <p class="text-5xl font-bold text-gray-900 mb-6">R$ 0<span class="text-lg text-gray-600">/mês</span></p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>3 simulações/mês</span></li>
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>Preços em tempo real</span></li>
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>Alertas básicos</span></li>
-                        <li class="flex items-start gap-2"><span class="text-gray-400">✗</span><span class="text-gray-400">Simulações ilimitadas</span></li>
-                    </ul>
-                    <a href="demo.html" class="block w-full bg-gray-200 text-gray-900 text-center px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors">
-                        Começar Grátis
-                    </a>
-                </div>
-
-                <div class="bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl p-8 shadow-2xl transform scale-105 relative">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold">
-                        ⭐ MAIS POPULAR
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-2">Básico</h3>
-                    <p class="text-5xl font-bold text-white mb-6">R$ 49<span class="text-lg text-green-100">/mês</span></p>
-                    <ul class="space-y-3 mb-8 text-white">
-                        <li class="flex items-start gap-2"><span>✓</span><span><strong>Simulações ilimitadas</strong></span></li>
-                        <li class="flex items-start gap-2"><span>✓</span><span>Alertas personalizados</span></li>
-                        <li class="flex items-start gap-2"><span>✓</span><span>Análise preditiva IA</span></li>
-                        <li class="flex items-start gap-2"><span>✓</span><span>Suporte prioritário</span></li>
-                        <li class="flex items-start gap-2"><span>✓</span><span>Histórico completo</span></li>
-                    </ul>
-                    <a href="demo.html" class="block w-full bg-white text-green-600 text-center px-6 py-3 rounded-lg font-bold hover:bg-green-50 transition-colors shadow-lg">
-                        Começar Teste Grátis
-                    </a>
-                    <p class="text-xs text-green-100 text-center mt-3">14 dias grátis • Cancele quando quiser</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
-                    <p class="text-5xl font-bold text-gray-900 mb-6">R$ 149<span class="text-lg text-gray-600">/mês</span></p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>Tudo do Básico</span></li>
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span><strong>Analista humano</strong></span></li>
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>Execução de vendas</span></li>
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>Conexão compradores</span></li>
-                        <li class="flex items-start gap-2"><span class="text-green-600">✓</span><span>Relatórios avançados</span></li>
-                    </ul>
-                    <a href="demo.html" class="block w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all">
-                        Contratar Premium
-                    </a>
-                </div>
-            </div>
-
-            <div class="mt-12 text-center">
-                <p class="text-gray-600 text-lg">ROI médio: <strong class="text-green-600">85:1</strong> • Se economizar R$ 50k/safra, R$ 588/ano é barganha! </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Docs Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Para Investidores & Parceiros</h2>
-                <p class="text-xl text-gray-600">Documentação completa do projeto</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <a href="pitch.html" class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border-2 border-blue-200 block">
-                    <div class="text-5xl mb-4">📊</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Pitch Deck</h3>
-                    <p class="text-gray-700 mb-4">Apresentação completa para investidores com foco em IA de vendas</p>
-                    <span class="text-blue-600 font-semibold">Ver Pitch →</span>
-                </a>
-
-                <a href="business-plan.html" class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border-2 border-purple-200 block">
-                    <div class="text-5xl mb-4">📋</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Business Plan</h3>
-                    <p class="text-gray-700 mb-4">Plano de negócios detalhado, mercado, financials e tecnologia IA</p>
-                    <span class="text-purple-600 font-semibold">Ver Plano →</span>
-                </a>
-
-                <a href="gtm-strategy.html" class="card-hover bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border-2 border-green-200 block">
-                    <div class="text-5xl mb-4">🚀</div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Go-to-Market</h3>
-                    <p class="text-gray-700 mb-4">Estratégia completa de conquista do mercado brasileiro</p>
-                    <span class="text-green-600 font-semibold">Ver Estratégia →</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Final -->
-    <section class="py-20 bg-gradient-to-r from-green-600 via-blue-600 to-purple-600">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                Pronto para Aumentar sua Receita em 20%+?
-            </h2>
-            <p class="text-2xl text-white/90 mb-12">
-                Junte-se a 300+ agricultores que já economizaram R$ 6,6 milhões no total
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="demo.html" class="bg-white text-green-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-green-50 transition-all shadow-2xl inline-block">
-                    🤖 Testar IA Grátis Agora
-                </a>
-                <a href="mailto:contato@agrobr.com.br" class="bg-green-500 text-white px-10 py-5 rounded-xl font-bold text-xl hover:bg-green-400 transition-all shadow-2xl inline-block">
-                    📧 Falar com Especialista
-                </a>
-            </div>
-            <p class="text-white/80 mt-6">💬 100% via WhatsApp • ✓ Grátis para testar • ⚡ Resultado em 3 segundos</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center text-xl">🤖</div>
-                        <span class="text-white font-bold text-xl">AgroBR</span>
-                    </div>
-                    <p class="text-sm">IA que Maximiza Receita Rural</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-3">Produto</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="demo.html" class="hover:text-white">Demo</a></li>
-                        <li><a href="#precos" class="hover:text-white">Preços</a></li>
-                        <li><a href="#ia" class="hover:text-white">Tecnologia</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-3">Empresa</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="business-plan.html" class="hover:text-white">Business Plan</a></li>
-                        <li><a href="pitch.html" class="hover:text-white">Investidores</a></li>
-                        <li><a href="gtm-strategy.html" class="hover:text-white">Go-to-Market</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-3">Contato</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li>📧 contato@agrobr.com.br</li>
-                        <li>📱 (61) 99999-9999</li>
-                        <li>📍 Brasília, DF</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>© 2025 AgroBR - Todos os direitos reservados</p>
-                <p class="mt-2">Transformando o agro brasileiro com Inteligência Artificial 🌾🤖</p>
-            </div>
-        </div>
-    </footer>
+    </div>
 
     <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        let messageDelay = 1500;
+
+        function addMessage(text, isUser = false, delay = 0) {
+            setTimeout(() => {
+                const container = document.getElementById('chatContainer');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `flex ${isUser ? 'justify-end' : 'justify-start'} animate-fade-in`;
+                
+                const time = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+                
+                messageDiv.innerHTML = `
+                    <div class="max-w-[80%]">
+                        <div class="${isUser ? 'bg-green-500 text-white rounded-2xl rounded-br-none' : 'bg-gray-100 text-gray-800 rounded-2xl rounded-bl-none'} p-4 shadow">
+                            ${text}
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1 ${isUser ? 'text-right' : ''}">${time}</p>
+                    </div>
+                `;
+                
+                container.appendChild(messageDiv);
+                container.scrollTop = container.scrollHeight;
+            }, delay);
+        }
+
+        function showTypingIndicator(show = true, delay = 0) {
+            setTimeout(() => {
+                const container = document.getElementById('chatContainer');
+                const existing = document.getElementById('typing-indicator');
+                if (existing) existing.remove();
+                
+                if (show) {
+                    const typingDiv = document.createElement('div');
+                    typingDiv.id = 'typing-indicator';
+                    typingDiv.className = 'flex justify-start animate-fade-in';
+                    typingDiv.innerHTML = `
+                        <div class="bg-gray-100 rounded-2xl p-4">
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(typingDiv);
+                    container.scrollTop = container.scrollHeight;
                 }
+            }, delay);
+        }
+
+        function showAnalysisSteps() {
+            document.getElementById('analysisWidget').style.display = 'block';
+            
+            const steps = ['step1', 'step2', 'step3', 'step4'];
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    const el = document.getElementById(step);
+                    el.querySelector('.pulse-animation').textContent = '✓';
+                    el.querySelector('.bg-white\\/20').classList.add('bg-green-500');
+                }, (index + 1) * 1000);
             });
-        });
+
+            setTimeout(() => {
+                document.getElementById('analysisWidget').style.display = 'none';
+                document.getElementById('resultsPreview').style.display = 'block';
+            }, 5000);
+        }
+
+        function startDemo(crop) {
+            document.getElementById('quickOptions').style.display = 'none';
+            
+            const cropName = crop === 'soja' ? 'Soja' : 'Milho';
+            const emoji = crop === 'soja' ? '🌾' : '🌽';
+            
+            let currentDelay = 0;
+
+            // User message
+            addMessage(`${emoji} Tenho ${cropName} para vender`, true, currentDelay);
+            currentDelay += 1000;
+
+            // Bot typing
+            showTypingIndicator(true, currentDelay);
+            currentDelay += 2000;
+
+            // Bot response 1
+            showTypingIndicator(false, currentDelay);
+            addMessage(`Ótimo! Vou te ajudar a maximizar a receita da sua safra de ${cropName}. 🚀`, false, currentDelay);
+            currentDelay += 2000;
+
+            // Bot question
+            showTypingIndicator(true, currentDelay);
+            currentDelay += 2000;
+            showTypingIndicator(false, currentDelay);
+            addMessage(`Quantos hectares você produziu?<br><br>
+                <button onclick="setArea(150)" class="bg-green-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-green-600">150 ha</button>
+                <button onclick="setArea(300)" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">300 ha</button>
+            `, false, currentDelay);
+        }
+
+        function setArea(hectares) {
+            let currentDelay = 0;
+            
+            // User message
+            addMessage(`Produzi em ${hectares} hectares`, true, currentDelay);
+            currentDelay += 1000;
+
+            // Bot typing
+            showTypingIndicator(true, currentDelay);
+            currentDelay += 2000;
+
+            // Bot response
+            showTypingIndicator(false, currentDelay);
+            addMessage(`Perfeito! ${hectares} hectares de soja.<br><br>Qual sua produtividade média?<br><br>
+                <button onclick="setProductivity(${hectares}, 55)" class="bg-green-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-green-600">55 sc/ha</button>
+                <button onclick="setProductivity(${hectares}, 60)" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">60 sc/ha</button>
+            `, false, currentDelay);
+        }
+
+        function setProductivity(hectares, productivity) {
+            let currentDelay = 0;
+            const totalSacks = hectares * productivity;
+            
+            // User message
+            addMessage(`Minha produtividade é ${productivity} sacas/hectare`, true, currentDelay);
+            currentDelay += 1000;
+
+            // Bot typing
+            showTypingIndicator(true, currentDelay);
+            currentDelay += 2000;
+
+            // Bot calculating
+            showTypingIndicator(false, currentDelay);
+            addMessage(`📊 Calculando...<br><br>Total: <strong>${totalSacks.toLocaleString('pt-BR')} sacas</strong><br><br>Agora vou analisar o mercado e simular os melhores cenários de venda para você!`, false, currentDelay);
+            currentDelay += 3000;
+
+            // Show analysis
+            setTimeout(() => showAnalysisSteps(), currentDelay);
+            currentDelay += 6000;
+
+            // Final recommendation
+            setTimeout(() => {
+                showTypingIndicator(true, 0);
+            }, currentDelay);
+            currentDelay += 2000;
+
+            setTimeout(() => {
+                showTypingIndicator(false, 0);
+                
+                const priceToday = 142.50;
+                const basicScenario = totalSacks * priceToday;
+                const aiScenario = basicScenario * 1.05; // 5% better
+                const gain = aiScenario - basicScenario;
+
+                document.getElementById('scenarioBasic').textContent = `R$ ${basicScenario.toLocaleString('pt-BR', {minimumFractionDigits: 0})}`;
+                document.getElementById('scenarioAI').textContent = `R$ ${aiScenario.toLocaleString('pt-BR', {minimumFractionDigits: 0})}`;
+                document.getElementById('scenarioGain').textContent = `+R$ ${gain.toLocaleString('pt-BR', {minimumFractionDigits: 0})}`;
+
+                addMessage(`
+                    <div class="space-y-3">
+                        <p class="font-bold text-lg">🎯 Análise Completa!</p>
+                        
+                        <div class="bg-white/50 rounded-lg p-3">
+                            <p class="text-sm mb-2">📊 <strong>Dados que Analisei:</strong></p>
+                            <ul class="text-sm space-y-1 list-disc list-inside">
+                                <li>Preços: CEPEA, B3, Chicago</li>
+                                <li>Clima: Seca no MT (-12% produção)</li>
+                                <li>Demanda: China +18% importações</li>
+                                <li>Câmbio: Dólar subindo</li>
+                                <li>Seus custos de armazenagem</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-red-100 rounded-lg p-3 border-l-4 border-red-500">
+                            <p class="text-sm text-red-900"><strong>❌ Se vender tudo hoje:</strong></p>
+                            <p class="text-xl font-bold text-red-700">R$ ${basicScenario.toLocaleString('pt-BR', {minimumFractionDigits: 0})}</p>
+                        </div>
+
+                        <div class="bg-green-100 rounded-lg p-3 border-l-4 border-green-500">
+                            <p class="text-sm text-green-900"><strong>✅ Estratégia IA Ótima:</strong></p>
+                            <p class="text-sm mb-1">• 30% HOJE (caixa imediato)</p>
+                            <p class="text-sm mb-1">• 40% NOVEMBRO (previsão alta)</p>
+                            <p class="text-sm mb-2">• 30% FEVEREIRO (janela spot)</p>
+                            <p class="text-xl font-bold text-green-700">R$ ${aiScenario.toLocaleString('pt-BR', {minimumFractionDigits: 0})}</p>
+                        </div>
+
+                        <div class="bg-blue-100 rounded-lg p-3 text-center">
+                            <p class="text-sm text-blue-900 mb-1"><strong>💰 Ganho com IA:</strong></p>
+                            <p class="text-3xl font-bold text-blue-700">+R$ ${gain.toLocaleString('pt-BR', {minimumFractionDigits: 0})}</p>
+                            <p class="text-sm text-blue-900 mt-1">(+5% de retorno!)</p>
+                        </div>
+
+                        <p class="text-sm">🎯 <strong>Por quê essa estratégia?</strong></p>
+                        <p class="text-sm">A seca no Mato Grosso vai reduzir oferta. China aumentou importações. Dólar subindo favorece exportação. Tudo indica preço maior em nov/dez!</p>
+                    </div>
+                `, false, 0);
+
+                setTimeout(() => {
+                    addMessage(`
+                        <p class="mb-3">💡 <strong>Quer implementar essa estratégia?</strong></p>
+                        <p class="text-sm mb-4">Posso te conectar com compradores agora mesmo e te avisar quando chegar o momento certo de vender cada parte!</p>
+                        <button onclick="window.location.href='index.html#precos'" class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 w-full mb-2">
+                            ✨ Começar a Usar AgroBR
+                        </button>
+                        <button onclick="location.reload()" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 w-full">
+                            🔄 Fazer Nova Simulação
+                        </button>
+                    `, false, 0);
+                }, 2000);
+
+            }, currentDelay);
+        }
     </script>
 </body>
 </html>
