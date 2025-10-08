@@ -1,1 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroBR - Go-to-Market Strategy | IA que Maximiza Vendas Agrícolas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+        .section { scroll-margin-top: 80px; }
+        nav { position: sticky; top: 0; z-index: 50; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .gradient-text { background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <a href="index.html" class="text-white hover:underline mb-2 inline-block text-sm">← Voltar ao site</a>
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-4xl shadow-lg">🎯</div>
+                <div>
+                    <h1 class="text-4xl font-bold">Estratégia Go-to-Market</h1>
+                    <p class="text-green-100">Posicionar IA de Vendas como o Padrão do Agro Brasileiro</p>
+                </div>
+            </div>
+            <div class="flex gap-4 text-sm flex-wrap">
+                <span class="bg-white/20 px-3 py-1 rounded-full">🤖 Foco: IA de Simulação de Vendas</span>
+                <span class="bg-white/20 px-3 py-1 rounded-full">🎯 150k usuários em 36 meses</span>
+                <span class="bg-white/20 px-3 py-1 rounded-full">💰 R$ 8M MRR</span>
+            </div>
+        </div>
+    </header>
 
+    <!-- Navigation -->
+    <nav class="bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-3">
+            <div class="flex gap-4 overflow-x-auto text-sm font-medium">
+                <a href="#posicionamento" class="text-gray-600 hover:text-green-600 whitespace-nowrap">Posicionamento</a>
+                <a href="#mensagem" class="text-gray-600 hover:text-green-600 whitespace-nowrap">Mensagem</a>
+                <a href="#fase1" class="text-gray-600 hover:text-green-600 whitespace-nowrap">Fase 1</a>
+                <a href="#fase2" class="text-gray-600 hover:text-green-600 whitespace-nowrap">Fase 2</a>
+                <a href="#fase3" class="text-gray-600 hover:text-green-600 whitespace-nowrap">Fase 3</a>
+                <a href="#canais" class="text-gray-600 hover:text-green-600 whitespace-nowrap">Canais</a>
+                <a href="#kpis" class="text-gray-600 hover:text-green-600 whitespace-nowrap">KPIs</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        
+        <!-- Posicionamento -->
+        <section id="posicionamento" class="section mb-16">
+            <div class="bg-gradient-to-br from-blue-900 to-purple-900 rounded-2xl shadow-2xl p-10 text-white">
+                <h2 class="text-4xl font-bold mb-8">🎯 Posicionamento Estratégico</h2>
+                
+                <div class="bg-white/10 backdrop-blur rounded-xl p-8 mb-8">
+                    <h3 class="text-3xl font-bold mb-4">Não Somos "Mais Um App Agro"</h3>
+                    <p class="text-2xl text-blue-100 leading-relaxed">
+                        Somos a <strong>primeira e única IA no Brasil</strong> que aumenta a receita do agricultor através de simulação inteligente de vendas. Não competimos com apps de gestão. Competimos com consultores de mercado de R$ 200k/ano.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-900/50 rounded-xl p-6">
+                        <p class="text-xl font-bold mb-3">❌ Posicionamento ERRADO:</p>
+                        <p class="text-red-200">"App de gestão agrícola com várias funcionalidades"</p>
+                        <p class="text-sm text-red-300 mt-2">→ Commodity, difícil diferenciar, CAC alto</p>
+                    </div>
+                    <div class="bg-green-900/50 rounded-xl p-6">
+                        <p class="text-xl font-bold mb-3">✅ Posicionamento CERTO:</p>
+                        <p class="text-green-200">"IA que aumenta sua receita em 20%+ dizendo quando vender"</p>
+                        <p class="text-sm text-green-300 mt-2">→ Valor claro, ROI direto, viral</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensagem Core -->
+        <section id="mensagem" class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">💬 Mensagem de Marketing</h2>
+                
+                <div class="bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl p-10 text-white mb-8 text-center">
+                    <p class="text-5xl font-bold mb-6">"Venda na Hora Certa"</p>
+                    <p class="text-3xl text-green-100 mb-4">IA analisa mercado e te diz: venda 40% hoje, 60% em novembro</p>
+                    <p class="text-2xl">Ganhe R$ 50k+ a mais por safra</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500">
+                        <h4 class="font-bold text-gray-900 mb-3 text-xl">🎯 Para Pequenos (R$ 49/mês)</h4>
+                        <p class="text-gray-700">"Seu analista de mercado pessoal. Economize R$ 15k+ por safra."</p>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500">
+                        <h4 class="font-bold text-gray-900 mb-3 text-xl">🎯 Para Médios (R$ 149/mês)</h4>
+                        <p class="text-gray-700">"Consultoria de R$ 200k/ano por R$ 149/mês. IA + Analista humano."</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-500">
+                        <h4 class="font-bold text-gray-900 mb-3 text-xl">🎯 Para Cooperativas (B2B)</h4>
+                        <p class="text-gray-700">"Ofereça inteligência de mercado aos cooperados. Aumente fidelização."</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-yellow-50 rounded-xl p-6 border-2 border-yellow-400">
+                    <h4 class="font-bold text-gray-900 mb-3 text-xl">⚡ Triggers Emocionais</h4>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p className="font-semibold text-gray-900 mb-1">😰 DOR:</p>
+                            <p className="text-gray-700">"Você vendeu cedo e viu o preço subir 20% depois? Nunca mais."</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-gray-900 mb-1">😊 GANHO:</p>
+                            <p className="text-gray-700">"Imagine economizar o suficiente para comprar um trator novo."</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-gray-900 mb-1">😤 RAIVA:</p>
+                            <p className="text-gray-700">"Trader ganhou R$ 50k com sua safra. Você merece esse dinheiro."</p>
+                        </div>
+                        <div>
+                            <p className="font-semibold text-gray-900 mb-1">🏆 ASPIRAÇÃO:</p>
+                            <p className="text-gray-700">"Grandes produtores têm analista. Agora você também tem."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fase 1 -->
+        <section id="fase1" class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-14 h-14 bg-green-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">1</div>
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900">FASE 1: Validação do Valor da IA</h2>
+                        <p class="text-xl text-gray-600">Meses 1-6 • Planaltina-DF • 1.000 usuários</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 mb-8 border-l-4 border-green-500">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">🎯 Objetivo Principal</h3>
+                    <p class="text-xl text-gray-700">
+                        Provar que a IA de simulação de vendas <strong>realmente aumenta receita</strong> e que agricultores <strong>pagam por isso</strong>. Objetivo: 100+ cases documentados de ganho R$ 15k+
+                    </p>
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Estratégia de Aquisição (Budget: R$ 180k)</h3>
+
+                <div class="space-y-6">
+                    <div class="bg-blue-50 rounded-xl p-8 border-l-4 border-blue-500">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">1. Cooperativas - "Piloto Grátis"</h4>
+                            <span class="bg-blue-200 text-blue-800 px-4 py-2 rounded-full font-bold">40% budget</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            <strong>Pitch:</strong> "Oferecemos análise de mercado de R$ 200k/ano GRÁTIS para 100 cooperados por 6 meses. Se funcionar, licenciam."
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">Táticas:</p>
+                                <ul className="text-sm text-gray-700 space-y-1">
+                                    <li>✓ Demo ao vivo: simulação real em 3 min</li>
+                                    <li>✓ "Antes/Depois" de vendas reais</li>
+                                    <li>✓ Garantia: economizem R$ 50k+ ou devolvemos</li>
+                                    <li>✓ Assembleia: presidente apresenta como benefício</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">Meta:</p>
+                                <ul className="text-sm text-gray-700 space-y-1">
+                                    <li>• 3 cooperativas fechadas</li>
+                                    <li>• 300 agricultores onboarded</li>
+                                    <li>• 50%+ uso regular da IA vendas</li>
+                                    <li>• 100+ cases documentados</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 rounded-xl p-8 border-l-4 border-green-500">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">2. Facebook/Instagram Ads - "Case Stories"</h4>
+                            <span class="bg-green-200 text-green-800 px-4 py-2 rounded-full font-bold">30% budget</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            <strong>Creative:</strong> Vídeo de agricultor real: "Ia vender tudo por R$ 130. IA mandou esperar. Vendi por R$ 148. Ganhei R$ 156k a mais!"
+                        </p>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="font-bold text-gray-900 mb-2">Formato dos Ads:</p>
+                            <div className="grid md:grid-cols-2 gap-3 text-sm text-gray-700">
+                                <div>
+                                    <p className="font-semibold mb-1">Vídeo 30 seg:</p>
+                                    <p>Agricultor mostra WhatsApp com recomendação IA + resultado final</p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold mb-1">Carrossel:</p>
+                                    <p>"5 vezes que a IA salvou R$ 20k+" (antes/depois)</p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold mb-1">Headline:</p>
+                                    <p>"IA aumentou minha receita em R$ 50k. Custa R$ 49/mês"</p>
+                                </div>
+                                <div>
+                                    <p className="font-semibold mb-1">CTA:</p>
+                                    <p>"Teste grátis. Veja quanto você ganharia"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 rounded-xl p-8 border-l-4 border-purple-500">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">3. Embaixadores - "Show, Don't Tell"</h4>
+                            <span class="bg-purple-200 text-purple-800 px-4 py-2 rounded-full font-bold">20% budget</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            2 embaixadores locais que <strong>fazem simulação ao vivo</strong> com tablet na fazenda do agricultor
+                        </p>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="font-bold text-gray-900 mb-2">Script da Visita (15 min):</p>
+                            <ol className="text-sm text-gray-700 space-y-2 list-decimal list-inside">
+                                <li>Pergunta: quantos ha, produtividade, quando colheu</li>
+                                <li>Abre WhatsApp AgroBR na frente dele</li>
+                                <li>IA processa e mostra: "Você perdeu R$ 28k vendendo cedo"</li>
+                                <li>Mostra simulação: "Na próxima, ganhe R$ 35k com nossa estratégia"</li>
+                                <li>Fecha: "Quer testar grátis agora?"</li>
+                            </ol>
+                            <p className="text-gray-600 text-sm mt-3"><strong>Taxa conversão:</strong> 60%+ (quando veem o $ que perderam/ganhariam)</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 rounded-xl p-8 border-l-4 border-yellow-500">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-bold text-gray-900">4. WhatsApp Groups - "Dica Valiosa"</h4>
+                            <span class="bg-yellow-200 text-yellow-800 px-4 py-2 rounded-full font-bold">10% budget</span>
+                        </div>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Participar de grupos de agricultores dando <strong>alertas de mercado valiosos</strong> antes de vender o produto
+                        </p>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="font-bold text-gray-900 mb-2">Exemplos de Mensagens:</p>
+                            <div className="space-y-2 text-sm text-gray-700">
+                                <div className="bg-gray-50 rounded p-2">
+                                    <p>"⚠️ ALERTA: Seca no MT vai reduzir 12% da safra. Preço deve subir 8-10% em nov. Quem pode esperar, segure a venda."</p>
+                                </div>
+                                <div className="bg-gray-50 rounded p-2">
+                                    <p>"📊 China aumentou importações BR em 18% este mês. Momento favorável para fixar preços futuros."</p>
+                                </div>
+                                <div className="bg-gray-50 rounded p-2">
+                                    <p>"💡 Dica: Próxima semana pode ter volatilidade (dados USDA). Quer simular cenários? Testa grátis: [link]"</p>
+                                </div>
+                            </div>
+                            <p className="text-gray-600 text-sm mt-3">90% valor puro • 10% soft sell • Viraliza por ser útil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fase 2 -->
+        <section id="fase2" class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">2</div>
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900">FASE 2: Escala via Social Proof</h2>
+                        <p class="text-xl text-gray-600">Meses 7-18 • Centro-Oeste • 25.000 usuários</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 mb-8 border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">🎯 Objetivo: "Boca a Boca Estruturado"</h3>
+                    <p class="text-xl text-gray-700">
+                        Criar <strong>máquina de cases de sucesso</strong>. Meta: 1 case novo/dia mostrando "Fulano ganhou R$ X com AgroBR"
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-8 border-l-4 border-green-500">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">1. Programa "Embaixador do Sucesso" (35% budget)</h4>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Agricultores que economizaram R$ 30k+ viram embaixadores pagos
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">Como Funciona:</p>
+                                <ul className="text-sm text-gray-700 space-y-1">
+                                    <li>• Identificamos top 10% usuários (maior economia)</li>
+                                    <li>• Oferecemos: R$ 100 por referral que pague</li>
+                                    <li>• Damos kit: vídeo depoimento, posts prontos</li>
+                                    <li>• Eles compartilham história real em grupos</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">Escala:</p>
+                                <ul className="text-sm text-gray-700 space-y-1">
+                                    <li>• Mês 7: 10 embaixadores</li>
+                                    <li>• Mês 12: 30 embaixadores</li>
+                                    <li>• Mês 18: 50 embaixadores</li>
+                                    <li>• Cada um traz 10-20 usuários/mês</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-8 border-l-4 border-blue-500">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">2. UGC (User Generated Content) at Scale (25% budget)</h4>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Incentivar agricultores a postarem prints da recomendação IA + resultado
+                        </p>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="font-bold text-gray-900 mb-2">Mecânica:</p>
+                            <p className="text-sm text-gray-700 mb-3">
+                                "Poste no Instagram/Facebook um print da recomendação AgroBR + quanto você ganhou. Marque @agrobr.oficial. Ganha 2 meses grátis + concorre a R$ 5k"
+                            </p>
+                            <p className="font-bold text-gray-900 mb-1">Por quê funciona:</p>
+                            <ul className="text-sm text-gray-700 space-y-1">
+                                <li>• Agricultor fica orgulhoso de mostrar ganho</li>
+                                <li>• Amigos veem e pensam "quero isso também"</li>
+                                <li>• Autêntico (não é ad pago)</li>
+                                <li>• Viraliza em grupos WhatsApp</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-8 border-l-4 border-purple-500">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">3. Webinars "Como Vender Melhor" (15% budget)</h4>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Webinar gratuito toda semana: "3 erros que te custam R$ 30k+ na venda da safra"
+                        </p>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="font-bold text-gray-900 mb-2">Estrutura (45 min):</p>
+                            <ul className="text-sm text-gray-700 space-y-1">
+                                <li>• 0-10 min: Introdução + case real impactante</li>
+                                <li>• 10-30 min: 3 erros comuns (vender cedo, não diversificar, ignorar fundamentos)</li>
+                                <li>• 30-40 min: Demo AgroBR simulando safra de alguém ao vivo</li>
+                                <li>• 40-45 min: Q&A + CTA (teste grátis)</li>
+                            </ul>
+                            <p className="text-gray-600 text-sm mt-3">Meta: 100 pessoas/webinar • 30% conversão trial</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-xl p-8 border-l-4 border-yellow-500">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">4. Parcerias com Corretores (15% budget)</h4>
+                        <p class="text-gray-700 text-lg mb-4">
+                            Corretor indica AgroBR para cliente usar IA. Ganha comissão se cliente vender através dele
+                        </p>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="font-bold text-gray-900 mb-2">Win-Win-Win:</p>
+                            <ul className="text-sm text-gray-700 space-y-1">
+                                <li>• <strong>Agricultor:</strong> Decisão melhor com IA</li>
+                                <li>• <strong>Corretor:</strong> Cliente mais informado + mais volume</li>
+                                <li>• <strong>AgroBR:</strong> Canal de distribuição + comissão execução</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Canais de Marketing -->
+        <section id="canais" class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">📢 Canais de Marketing por Fase</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-green-50 rounded-xl p-6 border-2 border-green-200">
+                        <h3 class="text-xl font-bold text-green-700 mb-4">Fase 1 (Meses 1-6)</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li className="flex items-start gap-2"><span className="text-green-600">→</span><span>Cooperativas (piloto grátis)</span></li>
+                            <li className="flex items-start gap-2"><span className="text-green-600">→</span><span>Facebook Ads hiper-segmentado</span></li>
+                            <li className="flex items-start gap-2"><span className="text-green-600">→</span><span>Embaixadores (demo ao vivo)</span></li>
+                            <li className="flex items-start gap-2"><span className="text-green-600">→</span><span>WhatsApp groups (alertas valor)</span></li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-green-200">
+                            <p className="font-bold text-gray-900">Budget: R$ 180k</p>
+                            <p className="text-sm text-gray-600">CAC target: < R$ 150</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">Fase 2 (Meses 7-18)</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li className="flex items-start gap-2"><span className="text-blue-600">→</span><span>Programa embaixador sucesso</span></li>
+                            <li className="flex items-start gap-2"><span className="text-blue-600">→</span><span>UGC incentivado (prêmios)</span></li>
+                            <li className="flex items-start gap-2"><span className="text-blue-600">→</span><span>Webinars semanais</span></li>
+                            <li className="flex items-start gap-2"><span className="text-blue-600">→</span><span>Parcerias corretores</span></li>
+                            <li className="flex items-start gap-2"><span className="text-blue-600">→</span><span>Rádios rurais (spots)</span></li>
+                            <li className="flex items-start gap-2"><span className="text-blue-600">→</span><span>Influencers agro (integration)</span></li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-blue-200">
+                            <p className="font-bold text-gray-900">Budget: R$ 2,16M</p>
+                            <p className="text-sm text-gray-600">CAC target: < R$ 180</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 rounded-xl p-6 border-2 border-purple-200">
+                        <h3 class="text-xl font-bold text-purple-700 mb-4">Fase 3 (Meses 19-36)</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li className="flex items-start gap-2"><span className="text-purple-600">→</span><span>TV regional (Globo Rural)</span></li>
+                            <li className="flex items-start gap-2"><span className="text-purple-600">→</span><span>PR: cases em mídia especializada</span></li>
+                            <li className="flex items-start gap-2"><span className="text-purple-600">→</span><span>Patrocínios eventos</span></li>
+                            <li className="flex items-start gap-2"><span className="text-purple-600">→</span><span>Parceria SENAR / Banco do Brasil</span></li>
+                            <li className="flex items-start gap-2"><span className="text-purple-600">→</span><span>API aberta (ecossistema)</span></li>
+                        </ul>
+                        <div class="mt-4 pt-4 border-t border-purple-200">
+                            <p className="font-bold text-gray-900">Budget: R$ 8,1M</p>
+                            <p className="text-sm text-gray-600">CAC target: < R$ 200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KPIs -->
+        <section id="kpis" class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">📊 KPIs Específicos de IA de Vendas</h2>
+                
+                <div class="bg-gradient-to-r from-green-500 to-blue-500 rounded-xl p-8 text-white mb-8">
+                    <h3 class="text-2xl font-bold mb-6">Métricas Norte (North Star)</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <p className="text-green-100 mb-2">Usuários que USARAM IA de Vendas</p>
+                            <div className="bg-white/20 rounded-lg p-4">
+                                <p className="text-sm">Fase 1: <span className="text-3xl font-bold">700</span> (70%)</p>
+                                <p className="text-sm">Fase 2: <span className="text-3xl font-bold">17.500</span> (70%)</p>
+                                <p className="text-sm">Fase 3: <span className="text-3xl font-bold">105.000</span> (70%)</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p className="text-green-100 mb-2">Valor Total Economizado (Agregado)</p>
+                            <div className="bg-white/20 rounded-lg p-4">
+                                <p className="text-sm">Fase 1: <span className="text-3xl font-bold">R$ 14M</span></p>
+                                <p className="text-sm">Fase 2: <span className="text-3xl font-bold">R$ 350M</span></p>
+                                <p className="text-sm">Fase 3: <span className="text-3xl font-bold">R$ 2,1 Bi</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500">
+                        <h4 class="font-bold text-gray-900 mb-4 text-xl">Adoção da IA</h4>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <p className="text-gray-600">% que usam IA vendas</p>
+                                <p className="text-3xl font-bold text-blue-600">> 70%</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-600">Simulações/usuário/mês</p>
+                                <p className="text-3xl font-bold text-blue-600">> 4</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-600">Seguem recomendação</p>
+                                <p className="text-3xl font-bold text-blue-600">> 65%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500">
+                        <h4 class="font-bold text-gray-900 mb-4 text-xl">Valor Criado</h4>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <p className="text-gray-600">Economia média/usuário</p>
+                                <p className="text-3xl font-bold text-green-600">R$ 20k+</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-600">Aumento receita médio</p>
+                                <p className="text-3xl font-bold text-green-600">+18%</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-600">Acurácia previsão IA</p>
+                                <p className="text-3xl font-bold text-green-600">84%+</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-500">
+                        <h4 class="font-bold text-gray-900 mb-4 text-xl">Conversão</h4>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <p className="text-gray-600">Free → Paid (IA value)</p>
+                                <p className="text-3xl font-bold text-purple-600">15%</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-600">Churn mensal</p>
+                                <p className="text-3xl font-bold text-purple-600">< 3%</p>
+                            </div>
+                            <div>
+                                <p className="text-gray-600">Referral rate</p>
+                                <p className="text-3xl font-bold text-purple-600">2,5/user</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checklist -->
+        <section class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">✅ Checklist de Ação Imediata</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-red-50 rounded-xl p-8 border-l-4 border-red-500">
+                        <h3 class="text-2xl font-bold text-red-700 mb-4">🔥 Próximos 7 Dias</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Gravar 5 vídeos de agricultores mostrando ganho com IA (cases reais)</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Criar calculadora web: "Quanto você ganharia com AgroBR?"</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Mapear 20 cooperativas e preparar pitch focado em ROI da IA</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Criar material "Antes/Depois" com 10 exemplos de ganhos reais</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Setup Facebook Ads com creative focado em "Quanto você perdeu?"</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 rounded-xl p-8 border-l-4 border-yellow-500">
+                        <h3 class="text-2xl font-bold text-yellow-700 mb-4">⚡ Próximos 30 Dias</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Fechar 3 cooperativas com piloto "resultado garantido ou grátis"</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Lançar primeiro webinar "Erros que custam R$ 30k+"</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>100 agricultores usando IA regularmente</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Documentar 20+ cases "Ganhei R$ X com AgroBR"</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Lançar programa UGC com prêmio R$ 5k</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 rounded-xl p-8 border-l-4 border-green-500">
+                        <h3 class="text-2xl font-bold text-green-700 mb-4">🎯 Próximos 90 Dias</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>1.000 usuários ativos</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>700+ usando IA de vendas regularmente</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>R$ 14M+ economizados no total (agregado)</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>NPS > 60 (love pela IA)</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>50+ vídeos UGC de agricultores felizes</span>
+                            </label>
+                            <label class="flex items-start gap-3 text-gray-700">
+                                <input type="checkbox" class="mt-1 w-5 h-5">
+                                <span>Validar: agricultores pagam pela IA (conversão 15%+)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mensagens por Canal -->
+        <section class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">🎨 Mensagens de Marketing por Canal</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Facebook/Instagram Ads</h4>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">Headline:</p>
+                                <p className="text-gray-700">"Ia vender por R$ 130. IA mandou esperar. Vendi por R$ 148. Ganhei R$ 156k."</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">Body:</p>
+                                <p className="text-gray-700">"Nossa IA analisa preços, clima e demanda pra te dizer QUANDO vender. Teste grátis."</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">CTA:</p>
+                                <p className="text-gray-700">"Simule sua safra grátis →"</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <p className="font-bold text-gray-900 mb-2">Social Proof:</p>
+                                <p className="text-gray-700">"300 agricultores economizaram R$ 6,6M no total"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Rádio Rural (30 segundos)</h4>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="text-gray-700 italic">
+                                "Você sabia que 68% dos agricultores vendem no pior momento e perdem R$ 28 mil por safra? 
+                                O AgroBR usa Inteligência Artificial pra te dizer QUANDO vender e quanto ganhar a mais. 
+                                300 agricultores já economizaram mais de 6 milhões de reais. 
+                                Teste grátis no seu WhatsApp. AgroBR ponto com ponto br. 
+                                AgroBR: a IA que aumenta sua receita."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-6 border-l-4 border-purple-500">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Pitch Cooperativas (Elevator - 60 seg)</h4>
+                        <div class="bg-white rounded-lg p-4">
+                            <p className="text-gray-700">
+                                "68% dos seus cooperados vendem no momento errado e perdem R$ 28 mil por safra. 
+                                Nossa IA analisa preços, clima global e recomenda o momento exato de vender. 
+                                Resultado: +18% de receita em média. 
+                                Oferecemos 6 meses grátis pra 100 cooperados provarem. 
+                                Se não economizarem pelo menos R$ 50 mil no total, não cobram nada. 
+                                Quando funcionar, licenciam por R$ 80k/ano - menos que um analista. 
+                                Posso agendar uma demo ao vivo com a diretoria?"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-2xl shadow-2xl p-12 text-white text-center">
+                <h2 class="text-4xl font-bold mb-4">🚀 Estratégia Clara, Execução Focada</h2>
+                <p class="text-2xl mb-8 text-white/90">
+                    Toda comunicação gira em torno do valor da IA: <strong>"Venda melhor, ganhe mais"</strong>
+                </p>
+                <div class="flex gap-6 justify-center flex-wrap">
+                    <a href="business-plan.html" class="bg-white text-green-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-lg inline-block">
+                        📋 Ver Business Plan
+                    </a>
+                    <a href="pitch.html" class="bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-400 transition-all shadow-lg inline-block">
+                        📊 Ver Pitch Deck
+                    </a>
+                    <a href="demo.html" class="bg-blue-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-400 transition-all shadow-lg inline-block">
+                        🤖 Testar IA
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="mb-2">© 2025 AgroBR - Go-to-Market Strategy</p>
+            <p class="text-sm">Vamos democratizar inteligência de mercado no agro brasileiro! 🤖🌾</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
