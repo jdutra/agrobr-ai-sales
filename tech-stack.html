@@ -1,4 +1,136 @@
-<!DOCTYPE html>
+<!-- Custos -->
+        <section id="custos" class="section mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-10">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">💰 Custos de Infraestrutura (GCP)</h2>
+                
+                <div class="bg-blue-50 rounded-xl p-6 mb-8 border-l-4 border-blue-500">
+                    <h4 class="font-bold text-gray-900 mb-3 text-xl">✨ Vantagens de Custo no GCP</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div className="bg-white rounded p-3">
+                            <p className="font-bold text-blue-700 mb-1">Sustained Use Discounts</p>
+                            <p className="text-gray-700">Até 30% desconto automático em VMs de longa duração</p>
+                        </div>
+                        <div className="bg-white rounded p-3">
+                            <p className="font-bold text-blue-700 mb-1">Preemptible VMs</p>
+                            <p className="text-gray-700">80% mais barato para training ML (batch jobs)</p>
+                        </div>
+                        <div className="bg-white rounded p-3">
+                            <p className="font-bold text-blue-700 mb-1">Free Tier Generoso</p>
+                            <p className="text-gray-700">BigQuery: 1TB query/mês grátis • Cloud Functions: 2M calls/mês</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 rounded-xl p-8 border-2 border-blue-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">1.000 Usuários Ativos</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Cloud Run (API)</span>
+                                <span className="font-bold text-gray-900">R$ 450/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Vertex AI Endpoints</span>
+                                <span className="font-bold text-gray-900">R$ 680/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Cloud SQL (PostgreSQL)</span>
+                                <span className="font-bold text-gray-900">R$ 320/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Memorystore (Redis)</span>
+                                <span className="font-bold text-gray-900">R$ 180/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">BigQuery</span>
+                                <span className="font-bold text-gray-900">R$ 150/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Pub/Sub + Functions</span>
+                                <span className="font-bold text-gray-900">R$ 120/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">APIs Externas</span>
+                                <span className="font-bold text-gray-900">R$ 1.000/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Monitoring (GCP)</span>
+                                <span className="font-bold text-gray-900">R$ 100/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded p-4 font-bold text-lg">
+                                <span>TOTAL GCP</span>
+                                <span>R$ 3.000/mês</span>
+                            </div>
+                        </div>
+                        <p className="text-center mt-4 text-gray-600">Custo por usuário: <strong className="text-blue-600">R$ 3,00</strong></p>
+                        <p className="text-center text-sm text-green-600 font-semibold">✨ 26% mais barato que AWS!</p>
+                    </div>
+
+                    <div class="bg-green-50 rounded-xl p-8 border-2 border-green-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">150.000 Usuários (Ano 3)</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Cloud Run (escalado)</span>
+                                <span className="font-bold text-gray-900">R$ 28k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Vertex AI (multi-region)</span>
+                                <span className="font-bold text-gray-900">R$ 62k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Cloud SQL HA</span>
+                                <span className="font-bold text-gray-900">R$ 18k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">BigQuery</span>
+                                <span className="font-bold text-gray-900">R$ 12k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Memorystore</span>
+                                <span className="font-bold text-gray-900">R$ 8k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Pub/Sub + CDN</span>
+                                <span className="font-bold text-gray-900">R$ 6k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">APIs Externas</span>
+                                <span className="font-bold text-gray-900">R$ 18k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">Monitoring</span>
+                                <span className="font-bold text-gray-900">R$ 3k/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-gradient-to-r from-green-500 to-green-600 text-white rounded p-4 font-bold text-lg">
+                                <span>TOTAL GCP</span>
+                                <span>R$ 155k/mês</span>
+                            </div>
+                        </div>
+                        <p className="text-center mt-4 text-gray-600">Custo por usuário: <strong className="text-green-600">R$ 1,03</strong></p>
+                        <p className="text-center text-sm text-green-600 font-semibold">✨ 14% mais barato que AWS em escala!</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-xl p-8 text-white">
+                    <h4 class="text-2xl font-bold mb-4 text-center">💎 Margem de Contribuição</h4>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <p className="text-green-100 mb-1">ARPU</p>
+                            <p className="text-4xl font-bold">R$ 95/mês</p>
+                        </div>
+                        <div>
+                            <p className="text-green-100 mb-1">Custo GCP (escala)</p>
+                            <p className="text-4xl font-bold">R$ 1,03/mês</p>
+                        </div>
+                        <div>
+                            <p className="text-green-100 mb-1">Margem</p>
+                            <p className="text-5xl font-bold">98,9%</p>
+                        </div>
+                    </div>
+                    <p className="text-center mt-4 text-xl">🎯 Economia de R$ 25k/mês vs AWS (150k usuários)</p>
+                </div>
+            </div>
+        </section><!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -156,29 +288,70 @@
 └───────────────────────────┬─────────────────────────────────────┘
                             │
 ┌───────────────────────────▼─────────────────────────────────────┐
-│                  📱 CAMADA DE APLICAÇÃO                          │
+│          📱 CAMADA DE APLICAÇÃO (GCP Cloud Run)                  │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
 │  │  WhatsApp    │  │   GPT-4      │  │  User        │          │
 │  │  Business    │→ │   NLP        │→ │  Context     │          │
-│  │  API         │  │  Engine      │  │  Manager     │          │
+│  │  API         │  │  (Vertex)    │  │  Manager     │          │
 │  └──────────────┘  └──────────────┘  └──────────────┘          │
 └───────────────────────────┬─────────────────────────────────────┘
                             │
 ┌───────────────────────────▼─────────────────────────────────────┐
-│           🤖 CAMADA DE IA - SIMULAÇÃO DE VENDAS                  │
+│      🤖 CAMADA DE IA - VERTEX AI (southamerica-east1 - SP)       │
 │  ┌───────────────────────────────────────────────────────────┐  │
-│  │  1️⃣  Data Ingestion (50+ APIs real-time)                  │  │
-│  │  2️⃣  Price Prediction (LSTM + XGBoost + Prophet)         │  │
-│  │  3️⃣  Monte Carlo Simulation (10k cenários)               │  │
-│  │  4️⃣  Portfolio Optimization (Markowitz)                  │  │
-│  │  5️⃣  Recommendation Generator (GPT-4)                    │  │
+│  │  1️⃣  Data Ingestion (Cloud Pub/Sub + Dataflow)            │  │
+│  │  2️⃣  Price Prediction (Vertex AI Endpoints)               │  │
+│  │      → LSTM Model (PyTorch)                                │  │
+│  │      → XGBoost Model                                       │  │
+│  │      → Ensemble Predictor                                  │  │
+│  │  3️⃣  Monte Carlo Simulation (Cloud Run Jobs)              │  │
+│  │  4️⃣  Portfolio Optimization (Cloud Functions)             │  │
+│  │  5️⃣  Recommendation (Vertex AI PaLM 2 / GPT-4)           │  │
 │  └───────────────────────────────────────────────────────────┘  │
 └───────────────────────────┬─────────────────────────────────────┘
                             │
 ┌───────────────────────────▼─────────────────────────────────────┐
-│              💾 CAMADA DE DADOS                                  │
+│              💾 CAMADA DE DADOS (GCP)                            │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
-│  │ PostgreSQL   │  │    Redis     │  │   MongoDB    │          │
+│  │ Cloud SQL    │  │ Memorystore  │  │  BigQuery    │          │
+│  │ PostgreSQL   │  │   (Redis)    │  │ (Warehouse)  │          │
+│  └──────────────┘  └──────────────┘  └──────────────┘          │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│         📡 FONTES DE DADOS EXTERNAS (50+ APIs)                   │
+│  • CEPEA, B3, CME  • NOAA, INMET  • China Customs              │
+│  • Banco Central   • Reuters News  • Bloomberg                  │
+│                                                                  │
+│  Ingestão via Cloud Scheduler → Cloud Functions → Pub/Sub       │
+└─────────────────────────────────────────────────────────────────┘
+
+📍 REGIÃO PRINCIPAL: southamerica-east1 (São Paulo)
+⚡ LATÊNCIA BRASIL: < 20ms
+🔄 BACKUP: us-central1 (failover automático)
+</pre>
+                </div>
+
+                <div class="mt-8 grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200">
+                        <h4 className="font-bold text-gray-900 mb-3 text-xl">🌎 Multi-Region Setup</h4>
+                        <div className="space-y-2 text-sm text-gray-700">
+                            <p><strong>Primary:</strong> southamerica-east1 (São Paulo)</p>
+                            <p><strong>Secondary:</strong> us-central1 (Iowa)</p>
+                            <p><strong>Latência:</strong> < 20ms Brasil, < 150ms global</p>
+                            <p><strong>Uptime:</strong> 99.95% SLA garantido</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200">
+                        <h4 className="font-bold text-gray-900 mb-3 text-xl">🔒 Segurança & Compliance</h4>
+                        <div className="space-y-2 text-sm text-gray-700">
+                            <p>✓ LGPD compliance (dados em SP)</p>
+                            <p>✓ Encryption at rest & in transit</p>
+                            <p>✓ VPC Service Controls</p>
+                            <p>✓ IAM granular, audit logs completos</p>
+                        </div>
+                    </div>
+                </div>│
 │  │ TimescaleDB  │  │   (Cache)    │  │ (Semi-struct)│          │
 │  └──────────────┘  └──────────────┘  └──────────────┘          │
 └───────────────────────────┬─────────────────────────────────────┘
@@ -315,27 +488,27 @@
                     <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 border-2 border-orange-200">
                         <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                             <span>☁️</span>
-                            <span>Cloud & DevOps</span>
+                            <span>Cloud & DevOps (GCP)</span>
                         </h3>
                         <div class="space-y-3">
                             <div class="flex items-center gap-3">
-                                <div class="tech-badge bg-orange-500 text-white px-4 py-2 rounded-lg font-bold text-sm">AWS</div>
-                                <span class="text-gray-600 text-sm">Cloud principal</span>
+                                <div class="tech-badge bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-sm">GCP</div>
+                                <span class="text-gray-600 text-sm">Google Cloud Platform</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="tech-badge bg-blue-900 text-white px-4 py-2 rounded-lg font-bold text-sm">SageMaker</div>
+                                <div class="tech-badge bg-orange-500 text-white px-4 py-2 rounded-lg font-bold text-sm">Vertex AI</div>
                                 <span class="text-gray-600 text-sm">ML training/deploy</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="tech-badge bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-sm">Docker</div>
-                                <span class="text-gray-600 text-sm">Containerization</span>
+                                <div class="tech-badge bg-blue-700 text-white px-4 py-2 rounded-lg font-bold text-sm">Cloud Run</div>
+                                <span class="text-gray-600 text-sm">Serverless containers</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="tech-badge bg-blue-500 text-white px-4 py-2 rounded-lg font-bold text-sm">Kubernetes</div>
-                                <span class="text-gray-600 text-sm">Orchestration</span>
+                                <div class="tech-badge bg-blue-500 text-white px-4 py-2 rounded-lg font-bold text-sm">GKE</div>
+                                <span class="text-gray-600 text-sm">Kubernetes Engine</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <div class="tech-badge bg-gray-800 text-white px-4 py-2 rounded-lg font-bold text-sm">GitHub Actions</div>
+                                <div class="tech-badge bg-gray-800 text-white px-4 py-2 rounded-lg font-bold text-sm">Cloud Build</div>
                                 <span class="text-gray-600 text-sm">CI/CD</span>
                             </div>
                         </div>
@@ -496,7 +669,94 @@
                 <h2 class="text-4xl font-bold text-gray-900 mb-8">💻 Exemplo de Código - LSTM</h2>
                 
                 <div class="code-block">
-<pre><code class="text-sm"># models/lstm_price_predictor.py
+<pre><code class="text-sm"># deployment/vertex_ai_deploy.py
+
+from google.cloud import aiplatform
+
+def deploy_model_to_vertex_ai():
+    """
+    Deploy modelo LSTM para Vertex AI Endpoint
+    """
+    
+    # Inicializar Vertex AI
+    aiplatform.init(
+        project='agrobr-production',
+        location='southamerica-east1',  # São Paulo
+        staging_bucket='gs://agrobr-models'
+    )
+    
+    # Upload modelo treinado
+    model = aiplatform.Model.upload(
+        display_name='lstm-price-predictor-v1',
+        artifact_uri='gs://agrobr-models/lstm_soybean/',
+        serving_container_image_uri='us-docker.pkg.dev/vertex-ai/prediction/pytorch-gpu.1-13:latest'
+    )
+    
+    # Deploy endpoint
+    endpoint = model.deploy(
+        deployed_model_display_name='price-prediction-prod',
+        machine_type='n1-standard-4',
+        min_replica_count=1,
+        max_replica_count=10,
+        accelerator_type='NVIDIA_TESLA_T4',  # GPU para inferência rápida
+        accelerator_count=1
+    )
+    
+    print(f"✅ Modelo deployed: {endpoint.resource_name}")
+    return endpoint
+
+
+def predict_prices(endpoint, features):
+    """
+    Faz predição usando Vertex AI endpoint
+    """
+    
+    prediction = endpoint.predict(instances=[features.tolist()])
+    
+    return {
+        'price': prediction.predictions[0],
+        'latency_ms': prediction.metadata.get('prediction_latency')
+    }
+
+
+# Exemplo de uso
+endpoint = deploy_model_to_vertex_ai()
+price = predict_prices(endpoint, user_features)
+
+print(f"Preço previsto: R$ {price['price']:.2f}/sc")
+print(f"Latência: {price['latency_ms']}ms")
+</code></pre>
+                </div>
+
+                <div class="mt-6 bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500">
+                    <h4 class="font-bold text-gray-900 mb-3 text-xl">🎯 Vertex AI MLOps Pipeline</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div className="bg-white rounded-lg p-4">
+                            <p className="font-bold text-blue-700 mb-2">1. Training</p>
+                            <ul className="text-gray-700 space-y-1">
+                                <li>• Custom training jobs</li>
+                                <li>• Preemptible GPUs (80% economia)</li>
+                                <li>• Hyperparameter tuning automático</li>
+                            </ul>
+                        </div>
+                        <div className="bg-white rounded-lg p-4">
+                            <p className="font-bold text-blue-700 mb-2">2. Deployment</p>
+                            <ul className="text-gray-700 space-y-1">
+                                <li>• Auto-scaling (1-100 replicas)</li>
+                                <li>• A/B testing integrado</li>
+                                <li>• Canary deployments</li>
+                            </ul>
+                        </div>
+                        <div className="bg-white rounded-lg p-4">
+                            <p className="font-bold text-blue-700 mb-2">3. Monitoring</p>
+                            <ul className="text-gray-700 space-y-1">
+                                <li>• Model drift detection</li>
+                                <li>• Performance tracking</li>
+                                <li>• Alertas automáticos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
 import torch
 import torch.nn as nn
@@ -641,28 +901,32 @@ print(f"Preço previsto: R$ {prediction.item():.2f}/sc")
                     <div class="bg-gray-50 rounded-xl p-6">
                         <h4 class="font-bold text-gray-900 mb-4 text-xl flex items-center gap-2">
                             <span>☁️</span>
-                            <span>AWS Services</span>
+                            <span>Google Cloud Platform (GCP)</span>
                         </h4>
                         <div class="space-y-3 text-sm">
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">EC2</span>
-                                <span className="text-gray-900 font-semibold">API Backend</span>
+                                <span className="text-gray-700">Cloud Run</span>
+                                <span className="text-gray-900 font-semibold">API Backend (Serverless)</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">SageMaker</span>
+                                <span className="text-gray-700">Vertex AI</span>
                                 <span className="text-gray-900 font-semibold">ML Training/Deploy</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">Lambda</span>
-                                <span className="text-gray-900 font-semibold">Serverless Functions</span>
+                                <span className="text-gray-700">Cloud Functions</span>
+                                <span className="text-gray-900 font-semibold">Serverless Events</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">RDS</span>
+                                <span className="text-gray-700">Cloud SQL</span>
                                 <span className="text-gray-900 font-semibold">PostgreSQL Managed</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">S3</span>
+                                <span className="text-gray-700">Cloud Storage</span>
                                 <span className="text-gray-900 font-semibold">Models + Data Storage</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white rounded p-3">
+                                <span className="text-gray-700">BigQuery</span>
+                                <span className="text-gray-900 font-semibold">Data Warehouse</span>
                             </div>
                         </div>
                     </div>
@@ -678,20 +942,20 @@ print(f"Preço previsto: R$ {prediction.item():.2f}/sc")
                                 <span className="text-gray-900 font-semibold">Containerization</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">Kubernetes</span>
-                                <span className="text-gray-900 font-semibold">Orchestration (EKS)</span>
+                                <span className="text-gray-700">GKE</span>
+                                <span className="text-gray-900 font-semibold">Kubernetes Engine</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">GitHub Actions</span>
+                                <span className="text-gray-700">Cloud Build</span>
                                 <span className="text-gray-900 font-semibold">CI/CD Pipeline</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">ArgoCD</span>
-                                <span className="text-gray-900 font-semibold">GitOps</span>
+                                <span className="text-gray-700">Artifact Registry</span>
+                                <span className="text-gray-900 font-semibold">Container Images</span>
                             </div>
                             <div class="flex justify-between items-center bg-white rounded p-3">
-                                <span className="text-gray-700">Helm</span>
-                                <span className="text-gray-900 font-semibold">K8s Package Manager</span>
+                                <span className="text-gray-700">Cloud Monitoring</span>
+                                <span className="text-gray-900 font-semibold">Observability</span>
                             </div>
                         </div>
                     </div>
