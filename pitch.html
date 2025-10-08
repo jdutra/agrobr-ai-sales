@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroBR - Pitch Deck | IA que Aumenta Receita Rural em 20%+</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+        .slide { display: none; min-height: 100vh; }
+        .slide.active { display: block; }
+        .progress-dot { width: 8px; height: 8px; background: #d1d5db; border-radius: 50%; transition: all 0.3s; }
+        .progress-dot.active { width: 32px; background: #10b981; }
+        .gradient-text { background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-blue-50">
+    
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm px-6 py-3 fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center text-xl">🤖</div>
+                <span class="font-bold text-xl text-gray-800">AgroBR</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-sm text-gray-600">Slide <span id="currentSlide">1</span> / <span id="totalSlides">12</span></span>
+                <div class="flex gap-1" id="progressDots"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slides Container -->
+    <div id="slidesContainer" class="pt-16">
+        
+        <!-- Slide 1: Cover -->
+        <div class="slide active" data-slide="1">
+            <div class="flex flex-col items-center justify-center min-h-screen text-center px-6">
+                <div class="w-32 h-32 bg-gradient-to-br from-green-500 to-blue-500 rounded-3xl flex items-center justify-center shadow-2xl mb-8 animate-pulse">
+                    <span class="text-7xl">🤖</span>
+                </div>
+                <h1 class="text-7xl font-bold text-gray-900 mb-4">AgroBR</h1>
+                <p class="text-4xl font-bold mb-8"><span class="gradient-text">IA que Aumenta Receita Rural em 20%+</span></p>
+                <p class="text-2xl text-gray-700 max-w-3xl mb-12">
+                    Simulação Inteligente de Cenários de Venda via WhatsApp
+                </p>
+                <div class="flex gap-6">
+                    <div class="bg-white px-8 py-4 rounded-xl shadow-lg">
+                        <p class="text-lg font-medium text-gray-700">🤖 IA de Previsão de Preços</p>
+                    </div>
+                    <div class="bg-white px-8 py-4 rounded-xl shadow-lg">
+                        <p class="text-lg font-medium text-gray-700">📊 1000+ Cenários Simulados</p>
+                    </div>
+                    <div class="bg-white px-8 py-4 rounded-xl shadow-lg">
+                        <p class="text-lg font-medium text-gray-700">💰 +R$ 22k/Agricultor</p>
+                    </div>
+                </div>
+                <p class="mt-16 text-gray-500">Confidencial • Investidores Qualificados • Outubro 2025</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: O Problema -->
+        <div class="slide" data-slide="2">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-5xl font-bold text-gray-900 mb-8 text-center">💥 O Problema de R$ 47 Bilhões</h2>
+                <p class="text-2xl text-gray-700 mb-12 text-center">Agricultores perdem fortunas vendendo no momento errado</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white rounded-2xl p-8 shadow-2xl border-l-4 border-red-500">
+                        <div class="text-7xl font-bold text-red-600 mb-4">68%</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Vendem na Pior Hora</h3>
+                        <p class="text-gray-700 text-lg">Desespero de caixa força venda na colheita, quando preço está mais baixo</p>
+                        <p class="mt-4 text-red-600 font-bold text-xl">→ Perda média: R$ 28.000/safra</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-2xl border-l-4 border-orange-500">
+                        <div class="text-7xl font-bold text-orange-600 mb-4">R$ 50k+</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Análise Inacessível</h3>
+                        <p class="text-gray-700 text-lg">Consultoria profissional de mercado custa R$ 50-200k/ano. Apenas 5% têm acesso</p>
+                        <p class="mt-4 text-orange-600 font-bold text-xl">→ Pequenos produtores sem informação</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-12 text-center shadow-2xl">
+                    <p class="text-3xl font-bold mb-4">Brasil perde anualmente:</p>
+                    <p class="text-7xl font-bold mb-4">R$ 47 Bi</p>
+                    <p class="text-2xl text-red-100">em decisões ruins de comercialização agrícola</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: O Grande Diferencial (IA) -->
+        <div class="slide" data-slide="3">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <div class="bg-gradient-to-br from-blue-900 to-purple-900 rounded-3xl p-12 text-white shadow-2xl mb-8">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="text-8xl">🚀</div>
+                        <div>
+                            <h2 class="text-5xl font-bold mb-2">O Grande Diferencial</h2>
+                            <p class="text-3xl text-blue-200">IA de Simulação de Cenários de Venda</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-8 mb-8">
+                        <h3 class="text-3xl font-bold mb-4">🎯 Por Que Isso Muda o Jogo?</h3>
+                        <p class="text-2xl leading-relaxed text-blue-100">
+                            Agricultores tomam a <strong>pior decisão da vida</strong> todo ano: quando vender a safra. 
+                            Um erro de timing custa <strong>15-30% da receita anual</strong>. Nossa IA elimina esse risco.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-red-50 rounded-2xl p-8 border-l-4 border-red-500 shadow-xl">
+                        <p class="text-2xl font-bold text-red-700 mb-4">❌ ANTES (Sem AgroBR)</p>
+                        <p class="text-lg text-gray-700 mb-4">João vende 8.700 sacas na colheita por desespero</p>
+                        <div class="text-4xl font-bold text-red-600">R$ 1.131.000</div>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-2xl p-8 border-l-4 border-green-500 shadow-xl">
+                        <p class="text-2xl font-bold text-green-700 mb-4">✅ DEPOIS (Com AgroBR)</p>
+                        <p class="text-lg text-gray-700 mb-4">IA recomenda venda gradual estratégica</p>
+                        <div class="text-4xl font-bold text-green-600 mb-2">R$ 1.301.085</div>
+                        <div class="text-3xl font-bold text-blue-600">Ganho: +R$ 170k! 🚀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Como a IA Funciona -->
+        <div class="slide" data-slide="4">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-5xl font-bold text-gray-900 mb-8 text-center">🧠 Como Nossa IA Funciona</h2>
+                <p class="text-2xl text-gray-600 mb-12 text-center">5 camadas de inteligência para maximizar sua receita</p>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-6 items-start bg-white rounded-2xl p-6 shadow-xl">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">1</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Coleta de Dados em Tempo Real</h3>
+                            <p class="text-gray-700 text-lg">50+ fontes: CEPEA, B3, Chicago, NOAA (clima), Reuters, exportações China/UE, câmbio</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start bg-white rounded-2xl p-6 shadow-xl">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">2</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Previsão com LSTM Neural Networks</h3>
+                            <p class="text-gray-700 text-lg">Analisa 15 anos de histórico • <strong>84% de acurácia</strong> em previsões 90 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start bg-white rounded-2xl p-6 shadow-xl">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">3</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Simulação Monte Carlo</h3>
+                            <p class="text-gray-700 text-lg">Roda <strong>10.000 simulações</strong> de cenários futuros considerando volatilidade e incerteza</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start bg-white rounded-2xl p-6 shadow-xl">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">4</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Personalização por Agricultor</h3>
+                            <p class="text-gray-700 text-lg">Considera: custos, dívidas, necessidade de caixa, perfil de risco, histórico</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6 items-start bg-white rounded-2xl p-6 shadow-xl">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">5</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Recomendação Simples via WhatsApp</h3>
+                            <p class="text-gray-700 text-lg">Complexidade escondida. Resposta clara: "Venda 40% hoje, 60% em novembro"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Mercado -->
+        <div class="slide" data-slide="5">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-5xl font-bold text-gray-900 mb-8 text-center">📊 Mercado & Oportunidade</h2>
+                <p class="text-2xl text-gray-600 mb-12 text-center">Não vendemos software. Capturamos valor das decisões de venda</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-10 shadow-xl text-center border-2 border-green-200">
+                        <p class="text-gray-600 mb-2">TAM</p>
+                        <p class="text-6xl font-bold text-green-600 mb-3">R$ 4,1 Bi</p>
+                        <p class="text-gray-700">5,1M agricultores × R$ 800/ano</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-10 shadow-xl text-center border-2 border-blue-200">
+                        <p class="text-gray-600 mb-2">SAM</p>
+                        <p class="text-6xl font-bold text-blue-600 mb-3">R$ 2,7 Bi</p>
+                        <p class="text-gray-700">3,4M com smartphone (67%)</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-10 shadow-xl text-center border-2 border-purple-200">
+                        <p class="text-gray-600 mb-2">SOM (Ano 5)</p>
+                        <p class="text-6xl font-bold text-purple-600 mb-3">R$ 217 Mi</p>
+                        <p class="text-gray-700">8% market share</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-12 shadow-2xl">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">Por Que Agora é o Momento Perfeito?</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl">📱</span>
+                            <div>
+                                <p class="font-bold text-xl text-gray-900">Penetração Mobile</p>
+                                <p class="text-gray-700">78% agricultores têm smartphone (vs 45% em 2018)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl">🤖</span>
+                            <div>
+                                <p class="font-bold text-xl text-gray-900">IA Acessível</p>
+                                <p class="text-gray-700">GPT-4 + LSTM agora viáveis economicamente</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl">📈</span>
+                            <div>
+                                <p class="font-bold text-xl text-gray-900">Volatilidade Crescente</p>
+                                <p class="text-gray-700">Preços oscilam 40%+ ao ano - timing é crítico</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl">🌍</span>
+                            <div>
+                                <p class="font-bold text-xl text-gray-900">Globalização</p>
+                                <p class="text-gray-700">China, clima global afetam preços locais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Tração -->
+        <div class="slide" data-slide="6">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-5xl font-bold text-gray-900 mb-8 text-center">🚀 Tração & Validação</h2>
+                <p class="text-2xl text-gray-600 mb-12 text-center">300 agricultores já estão economizando com nossa IA</p>
+                
+                <div class="grid md:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl text-center">
+                        <div class="text-6xl font-bold text-green-600 mb-3">300</div>
+                        <p class="font-semibold text-gray-900 mb-2">Usuários Piloto</p>
+                        <p class="text-sm text-gray-600">3 cooperativas parceiras</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-xl text-center">
+                        <div class="text-6xl font-bold text-blue-600 mb-3">R$ 15k</div>
+                        <p class="font-semibold text-gray-900 mb-2">MRR Atual</p>
+                        <p class="text-sm text-gray-600">Crescimento 15%/mês</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-xl text-center">
+                        <div class="text-6xl font-bold text-purple-600 mb-3">68</div>
+                        <p class="font-semibold text-gray-900 mb-2">NPS Score</p>
+                        <p class="text-sm text-gray-600">Love do produto</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-xl text-center">
+                        <div class="text-6xl font-bold text-yellow-600 mb-3">+20%</div>
+                        <p class="font-semibold text-gray-900 mb-2">Aumento Receita</p>
+                        <p class="text-sm text-gray-600">Média usuários</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-green-50 rounded-2xl p-8 border-l-4 border-green-500 shadow-xl">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">JS</div>
+                            <div>
+                                <p class="font-bold text-gray-900 text-2xl">José Silva</p>
+                                <p class="text-gray-600">85 ha soja, Planaltina-DF</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic text-xl mb-4">"Economizei R$ 22.000 na última safra usando a recomendação da IA. Melhor investimento que já fiz!"</p>
+                        <div class="flex gap-1 text-3xl">★★★★★</div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-2xl p-8 border-l-4 border-blue-500 shadow-xl">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">MS</div>
+                            <div>
+                                <p class="font-bold text-gray-900 text-2xl">Maria Santos</p>
+                                <p class="text-gray-600">Cooperativa Vale do Cerrado</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic text-xl mb-4">"Oferecemos análise de R$ 200k/ano por R$ 49/mês aos cooperados. Game changer total!"</p>
+                        <div class="flex gap-1 text-3xl">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Modelo de Negócio -->
+        <div class="slide" data-slide="7">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-5xl font-bold text-gray-900 mb-8 text-center">💼 Modelo de Negócio</h2>
+                <p class="text-2xl text-gray-600 mb-12 text-center">Capturamos valor que criamos • ROI de 85:1 para o agricultor</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-2xl p-6 shadow-xl">
+                            <div class="flex justify-between items-center mb-3">
+                                <h3 class="text-2xl font-bold">Assinaturas SaaS</h3>
+                                <span class="text-4xl font-bold">70%</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="bg-white/20 rounded-lg p-3">
+                                    <p className="font-semibold mb-1">Básico - R$ 49/mês</p>
+                                    <p className="text-sm text-green-100">Simulações ilimitadas • Conv. 15%</p>
+                                </div>
+                                <div class="bg-white/20 rounded-lg p-3">
+                                    <p className="font-semibold mb-1">Premium - R$ 149/mês</p>
+                                    <p className="text-sm text-green-100">+ Analista humano • Conv. 5%</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl p-6 shadow-xl">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-2xl font-bold">Comissão Vendas</h3>
+                                <span class="text-4xl font-bold">20%</span>
+                            </div>
+                            <p className="text-blue-100">0,3-0,5% do valor quando conectamos com compradores</p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-2xl p-6 shadow-xl">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-2xl font-bold">Licenciamento B2B</h3>
+                                <span class="text-4xl font-bold">10%</span>
+                            </div>
+                            <p className="text-purple-100">White-label cooperativas + API traders</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-green-600 to-blue-600 rounded-2xl p-10 text-white shadow-2xl">
+                        <h3 class="text-3xl font-bold mb-8 text-center">Unit Economics</h3>
+                        <div class="space-y-6">
+                            <div class="flex justify-between items-center border-b border-white/30 pb-4">
+                                <span class="text-xl">ARPU</span>
+                                <span class="text-4xl font-bold">R$ 95/mês</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-white/30 pb-4">
+                                <span class="text-xl">CAC</span>
+                                <span class="text-4xl font-bold">R$ 150</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-white/30 pb-4">
+                                <span class="text-xl">LTV</span>
+                                <span class="text-4xl font-bold">R$ 2.100</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl">LTV/CAC</span>
+                                <span class="text-4xl font-bold">14:1</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 bg-white/20 backdrop-blur rounded-xl p-4 text-center">
+                            <p className="text-xl font-bold">Churn < 3%/mês</p>
+                            <p className="text-sm text-green-100 mt-1">Quem economiza R$ 50k não cancela R$ 49/mês</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Projeções Financeiras -->
+        <div class="slide" data-slide="8">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <h2 class="text-5xl font-bold text-gray-900 mb-8 text-center">📈 Projeções Financeiras</h2>
+                <p class="text-2xl text-gray-600 mb-12 text-center">Caminho claro para R$ 142M em 5 anos</p>
+                
+                <div class="bg-white rounded-2xl shadow-2xl overflow-hidden mb-12">
+                    <table class="w-full">
+                        <thead class="bg-gradient-to-r from-green-600 to-blue-600 text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-xl">Ano</th>
+                                <th class="px-6 py-4 text-right text-xl">Usuários</th>
+                                <th class="px-6 py-4 text-right text-xl">Receita</th>
+                                <th class="px-6 py-4 text-right text-xl">EBITDA</th>
+                                <th class="px-6 py-4 text-right text-xl">Margem</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-lg">
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4 font-bold">2025</td>
+                                <td class="px-6 py-4 text-right">8.000</td>
+                                <td class="px-6 py-4 text-right font-bold text-green-600">R$ 2,1M</td>
+                                <td class="px-6 py-4 text-right">-R$ 1,2M</td>
+                                <td class="px-6 py-4 text-right">-57%</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-4 font-bold">2026</td>
+                                <td class="px-6 py-4 text-right">35.000</td>
+                                <td class="px-6 py-4 text-right font-bold text-green-600">R$ 12,8M</td>
+                                <td class="px-6 py-4 text-right">R$ 0,8M</td>
+                                <td class="px-6 py-4 text-right">6%</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td class="px-6 py-4 font-bold">2027</td>
+                                <td class="px-6 py-4 text-right">150.000</td>
+                                <td class="px-6 py-4 text-right font-bold text-green-600">R$ 38M</td>
+                                <td class="px-6 py-4 text-right">R$ 10,6M</td>
+                                <td class="px-6 py-4 text-right">28%</td>
+                            </tr>
+                            <tr class="border-b-4 border-green-600 bg-green-50">
+                                <td class="px-6 py-4 font-bold text-2xl">2029</td>
+                                <td class="px-6 py-4 text-right font-bold text-2xl">450.000</td>
+                                <td class="px-6 py-4 text-right font-bold text-green-600 text-2xl">R$ 142M</td>
+                                <td class="px-6 py-4 text-right font-bold text-2xl">R$ 54M</td>
+                                <td class="px-6 py-4 text-right font-bold text-2xl">38%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid md:grid-cols-5 gap-4">
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <p class="text-sm text-gray-600 mb-1">Payback</p>
+                        <p class="text-3xl font-bold text-green-600">8 meses</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <p class="text-sm text-gray-600 mb-1">LTV/CAC</p>
+                        <p class="text-3xl font-bold text-blue-600">14:1</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <p class="text-sm text-gray-600 mb-1">Margem</p>
+                        <p class="text-3xl font-bold text-purple-600">75%</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <p class="text-sm text-gray-600 mb-1">Churn</p>
+                        <p class="text-3xl font-bold text-yellow-600">< 3%</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                        <p class="text-sm text-gray-600 mb-1">Magic #</p>
+                        <p class="text-3xl font-bold text-pink-600">0,9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: O Pedido -->
+        <div class="slide" data-slide="9">
+            <div class="max-w-5xl mx-auto px-6 py-12">
+                <h2 class="text-5xl font-bold text-gray-900 mb-12 text-center">🚀 O Pedido</h2>
+                
+                <div class="bg-gradient-to-br from-green-600 to-blue-600 rounded-3xl p-16 text-white text-center shadow-2xl mb-12">
+                    <h3 class="text-6xl font-bold mb-6">R$ 3,5 milhões</h3>
+                    <p class="text-3xl mb-4">R$ 15M pré-money (20% equity)</p>
+                    <p class="text-2xl text-green-100">18 meses de runway • PMF + Preparação Série A</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">💰 Uso dos Recursos</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center bg-gray-50 rounded-lg p-4">
+                                <span class="font-semibold">IA & Data Science</span>
+                                <span class="text-2xl font-bold text-green-600">40%</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-gray-50 rounded-lg p-4">
+                                <span class="font-semibold">Time (20 pessoas)</span>
+                                <span class="text-2xl font-bold text-blue-600">35%</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-gray-50 rounded-lg p-4">
+                                <span class="font-semibold">Marketing & GTM</span>
+                                <span class="text-2xl font-bold text-purple-600">20%</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-gray-50 rounded-lg p-4">
+                                <span class="font-semibold">Capital de Giro</span>
+                                <span class="text-2xl font-bold text-yellow-600">5%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">🎯 Marcos 18 Meses</h3>
+                        <div class="space-y-3 text-lg">
+                            <p className="flex items-start gap-2"><span className="text-green-600">✓</span><span>8.000 usuários ativos</span></p>
+                            <p className="flex items-start gap-2"><span className="text-green-600">✓</span><span>R$ 175k MRR</span></p>
+                            <p className="flex items-start gap-2"><span className="text-green-600">✓</span><span>84%+ acurácia IA validada</span></p>
+                            <p className="flex items-start gap-2"><span className="text-green-600">✓</span><span>R$ 150M+ vendas facilitadas</span></p>
+                            <p className="flex items-start gap-2"><span className="text-green-600">✓</span><span>PMF comprovado (NPS > 60)</span></p>
+                            <p className="flex items-start gap-2"><span className="text-green-600">✓</span><span>Pronto para Série A</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center shadow-xl">
+                    <h4 class="text-3xl font-bold mb-6">Entre em Contato</h4>
+                    <div class="grid md:grid-cols-2 gap-6 text-xl">
+                        <div>
+                            <p class="opacity-90 mb-2">Email</p>
+                            <p class="font-bold text-2xl">contato@agrobr.com.br</p>
+                        </div>
+                        <div>
+                            <p class="opacity-90 mb-2">Telefone</p>
+                            <p class="font-bold text-2xl">(61) 99999-9999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="fixed bottom-0 w-full bg-white border-t px-6 py-4 shadow-lg">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <button onclick="prevSlide()" id="prevBtn" class="px-8 py-3 rounded-lg font-semibold bg-green-600 text-white hover:bg-green-700 transition-all shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                ← Anterior
+            </button>
+            <div class="text-center">
+                <p class="text-sm text-gray-600" id="slideTitle">Cover</p>
+            </div>
+            <button onclick="nextSlide()" id="nextBtn" class="px-8 py-3 rounded-lg font-semibold bg-green-600 text-white hover:bg-green-700 transition-all shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                Próximo →
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 9;
+        
+        const slideTitles = [
+            'Cover',
+            'O Problema',
+            'O Grande Diferencial (IA)',
+            'Como a IA Funciona',
+            'Mercado',
+            'Tração',
+            'Modelo de Negócio',
+            'Projeções Financeiras',
+            'O Pedido'
+        ];
+
+        function updateSlide() {
+            document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+            document.querySelector(`.slide[data-slide="${currentSlide}"]`).classList.add('active');
+            document.getElementById('currentSlide').textContent = currentSlide;
+            document.getElementById('totalSlides').textContent = totalSlides;
+            document.getElementById('slideTitle').textContent = slideTitles[currentSlide - 1];
+            document.getElementById('prevBtn').disabled = currentSlide === 1;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
+            updateProgressDots();
+            window.scrollTo(0, 0);
+        }
+
+        function updateProgressDots() {
+            const container = document.getElementById('progressDots');
+            container.innerHTML = '';
+            for (let i = 1; i <= totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'progress-dot' + (i === currentSlide ? ' active' : '');
+                container.appendChild(dot);
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        updateSlide();
+    </script>
+</body>
+</html>
